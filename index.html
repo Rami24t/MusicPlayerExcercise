@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Song Player in Flex</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+</head>
+<style>
+        .mainContainer {
+            display: flex;
+            flex-direction: column;
+            background-color: #e0e0e0;
+            border-radius: 2rem;
+            justify-content: space-around;
+            max-width: 39rem;
+            min-height: 98vh;
+            margin: auto;
+        }
+    .mainContainer button {
+        font-size: 3rem;
+        padding: 0.9rem;
+        border-radius: 1rem;
+        background: #e0e0e0;
+        box-shadow: inset 5px -5px 8px #8f8f8f, inset -5px 5px 8px #ffffff;
+    }
+
+    .mainContainer button:active {
+        border-radius: 1rem;
+        box-shadow: inset 11px 11px 11px #b1b1b1, inset -11px -11px 11px #ffffff;
+    }
+
+    .mainContainer button:active>i {
+        color: rgb(167, 0, 0);
+        scale: 0.9;
+    }
+
+.mainContainer    .fa-power-off {
+        color: red;
+    }
+
+.mainContainer    header {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+.mainContainer    .image1 img {
+        display: block;
+        width: 100%;
+        aspect-ratio: 1;
+    }
+
+.mainContainer    .image1 {
+        border-radius: 50%;
+        border: #8f8f8faf solid;
+        overflow: hidden;
+        box-shadow: 5px 5px 8px #8f8f8f, 5px 5px 8px #ffffff;
+        width: 80%;
+    }
+
+.mainContainer    .soundPlayer {
+        display: flex;
+        justify-content: center;
+        gap: 2rem;
+    }
+
+.mainContainer    .currentSong {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+.mainContainer    footer {
+        display: flex;
+        justify-content: center;
+        align-content: center;
+    }
+
+   .mainContainer .hruler {
+        width: 20rem;
+        padding: 1%;
+        box-shadow: inset 5px -5px 8px #fff, inset -5px 5px 8px #8f8f8f;
+    }
+
+.mainContainer    .gauge {
+        width: 20rem;
+        padding: 2.5%;
+        background-image: repeating-linear-gradient(to right, rgb(0, 195, 255), rgb(0, 119, 255));
+        background-size: 70%;
+        background-repeat: no-repeat;
+    }
+
+.mainContainer    h2 {
+        color: #8f8f8f;
+    }
+
+.mainContainer    .image1 {
+        position: relative;
+        aspect-ratio: 1;
+    }
+
+.mainContainer    .image1 div {
+        border-radius: 50%;
+        height: 12%;
+        width: 12%;
+        display: block;
+        background-color: #e0e0e0;
+        position: absolute;
+        right: 50%;
+        top: 50%;
+        translate: 50% -50%;
+        border: #8a8a8a 1px solid;
+        aspect-ratio: 1;
+    }
+
+.mainContainer    .image1 {
+        animation: cdrom 8s infinite linear;
+    }
+
+    @keyframes cdrom {
+        to {
+            rotate: 360deg;
+        }
+    }
+</style>
+
+<body>
+    <div class="mainContainer">
+        <header>
+            <button onclick="window.location.href='https://www.youtube.com/results?search_query=meja+all+about+the+money#search';"><i class="fa fa-search"></i></button>
+            <h1>My Playlist</h1>
+            <button onclick="if(document.getElementsByTagName('i')[1].style.color=='black') {document.getElementsByTagName('i')[1].style.color='red'; document.getElementById('love').getAnimations()[0].play();} else {document.getElementsByTagName('i')[1].style.color='black'; document.getElementById('love').getAnimations()[0].pause();}">
+                <i class="fa fa-power-off""></i>
+          </button>
+        </header>
+          <div class=" currentSong">
+                    <div class="image1" id="love">
+                        <div></div><img
+                            src="https://i.discogs.com/WRXRugRlZiiDPeVObU6eJn-GOZwwPYvHtJ0v05rfdOA/rs:fit/g:sm/q:90/h:473/w:541/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTE3NjA5/OTMtMTM2NTI3NTcy/MC02ODQ4LmpwZWc.jpeg"
+                            alt="'Meja - All about the money' cd cover image" />
+                    </div>
+                    <h3>All 'bout the money</h3>
+                    <h2>Meja</h2>
+                    <div><button class="gauge"></button></div>
+    </div>
+    <div class="soundPlayer">
+        <button><i class="fa fa-backward"></i></button>
+        <button onclick="window.location='https://youtu.be/YcXMhwF4EtQ';"><i class="fa fa-play"></i></i></button>
+        <button><i class="fa fa-forward"></i></button>
+    </div>
+    <footer>
+        <div><button  class="hruler" ></button></div>
+    </footer>
+    </div>
+</body>
+</html>
