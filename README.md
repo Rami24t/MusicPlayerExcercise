@@ -1,8 +1,6 @@
 # Neumorphic Music Player
 
-### My solution (live version)
-
- https://rami24t.github.io/MusicPlayerExcercise/
+### My solution (live version):  https://rami24t.github.io/MusicPlayerExcercise/
 
 Let's polish up our UI skills and practice Flexbox layouts by creating a music player -
 
