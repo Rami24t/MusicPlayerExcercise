@@ -1,0 +1,141 @@
+.mainContainer {
+  display: flex;
+  flex-direction: column;
+  background-color: #e0e0e0;
+  border-radius: 2rem;
+  justify-content: space-around;
+  max-width: 39rem;
+  min-height: 98vh;
+  margin: auto;
+}
+.mainContainer button {
+  font-size: 5vmin;
+  padding: 0.9rem;
+  border-radius: 1rem;
+  background: #e0e0e0;
+  box-shadow: inset 5px -5px 5px #8f8f8f, inset -4px 4px 5px #ffffff;
+}
+
+.mainContainer button:not(.gauge):active {
+  border-radius: 1rem;
+  box-shadow: inset 11px 11px 11px #b1b1b1, inset -11px -11px 11px #ffffff;
+}
+
+.mainContainer button:active > i {
+  color: rgb(167, 0, 0);
+  scale: 0.9;
+}
+
+.mainContainer .fa-power-off {
+  color: red;
+}
+
+.mainContainer header {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.mainContainer .image1 img {
+  display: block;
+  width: 100%;
+  aspect-ratio: 1;
+}
+
+.mainContainer .image1 {
+  border-radius: 50%;
+  border: #8f8f8faf solid;
+  overflow: hidden;
+  box-shadow: 0px 0px 8px #8f8f8f, 0px 0px 8px #ffffff;
+  width: 80%;
+}
+
+.mainContainer .soundPlayer {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.mainContainer .currentSong {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.mainContainer footer {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+
+.mainContainer .hruler {
+  width: 30vmin;
+  padding: 1%;
+  box-shadow: inset 5px -5px 8px #fff, inset -5px 5px 8px #8f8f8f;
+}
+
+.mainContainer .gauge {
+  width: calc(30vmin + 5rem);
+  padding: 2.5%;
+  background-image: repeating-linear-gradient(
+    to right,
+    rgb(0, 195, 255),
+    rgb(0, 119, 255)
+  );
+  background-size: 70%;
+  background-repeat: no-repeat;
+}
+
+.mainContainer h2 {
+  color: #8f8f8f;
+}
+
+.mainContainer .image1 {
+  position: relative;
+  aspect-ratio: 1;
+}
+
+.mainContainer .image1 div {
+  border-radius: 50%;
+  box-shadow: inset 0px -0px 5px silver, inset 0px 0px 5px #ffffff,
+    0px 0px 10px #00000071;
+  height: 12%;
+  width: 12%;
+  display: block;
+  background-color: rgb(109, 109, 109);
+  position: absolute;
+  right: 50%;
+  top: 50%;
+  transform: translateX(50%) translateY(-50%);
+  border: #8a8a8a 1px solid;
+  aspect-ratio: 1;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: rgb(218, 218, 218);
+  outline: rgba(0, 0, 0, 0.05) 1px solid;
+}
+
+.mainContainer .image1 {
+  animation: cdrom 8s infinite linear;
+  outline: rgba(255, 255, 255, 0.4) 1px solid;
+}
+
+@keyframes cdrom {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .mainContainer button {
+    font-size: 7vmin;
+    padding: 0.7rem;
+  }
+}
+
+/* 2022 | Rami Al-Saadi */
