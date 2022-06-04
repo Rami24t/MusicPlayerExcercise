@@ -100,7 +100,8 @@
 
 .mainContainer .image1 div {
   border-radius: 50%;
-  box-shadow: inset 0px -0px 5px silver, inset 0px 0px 5px #ffffff;
+  box-shadow: inset 0px -0px 5px silver, inset 0px 0px 5px #ffffff,
+    0px 0px 10px #00000071;
   height: 12%;
   width: 12%;
   display: block;
@@ -116,10 +117,12 @@
   align-items: center;
   justify-content: center;
   color: rgb(218, 218, 218);
+  outline: rgba(0, 0, 0, 0.05) 1px solid;
 }
 
 .mainContainer .image1 {
   animation: cdrom 8s infinite linear;
+  outline: rgba(255, 255, 255, 0.4) 1px solid;
 }
 
 @keyframes cdrom {
