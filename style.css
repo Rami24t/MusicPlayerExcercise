@@ -9,6 +9,7 @@
   margin: auto;
 }
 .mainContainer button {
+  border: none;
   font-size: 5vmin;
   padding: 0.9rem;
   border-radius: 1rem;
@@ -102,8 +103,8 @@
   border-radius: 50%;
   box-shadow: inset 0px -0px 5px silver, inset 0px 0px 5px #ffffff,
     0px 0px 10px #00000071;
-  height: 12%;
-  width: 12%;
+  height: 14%;
+  width: 14%;
   display: block;
   background-color: rgb(109, 109, 109);
   position: absolute;
