@@ -5,9 +5,11 @@ A Digital CD Player design designed(fully-responsive) and coded by me in 2022 as
 https://rami24t.github.io/MusicPlayerExcercise/
 
 ### Snapshots 
+##### Mobile
 ![Screenshot 2023-05-15 at 22-49-29 Song Player in Flex](https://github.com/Rami24t/MusicPlayerExcercise/assets/103028944/c9347c06-81da-417c-8ce1-1afd5ef2f6d6)
-![Screenshot 2023-05-15 at 22-48-31 Song Player in Flex](https://github.com/Rami24t/MusicPlayerExcercise/assets/103028944/048f9f82-8cb1-4533-8d2d-d0d142be6689)
-![Screenshot 2023-05-15 at 22-57-30 Song Player in Flex](https://github.com/Rami24t/MusicPlayerExcercise/assets/103028944/7456bc1c-e3b9-4140-9617-76e208a596e1)
+##### Desktop
+![Screenshot 2023-05-15 at 22-58-23 Song Player in Flex](https://github.com/Rami24t/MusicPlayerExcercise/assets/103028944/81779207-77d3-46e6-b8fd-62316b0dbf46)
+
 
 
 ### CSS/HTML UI Challenge and instructions
